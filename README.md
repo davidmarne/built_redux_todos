@@ -13,4 +13,4 @@ Runable examples:
 
 [over_react](examples/over_react/) # TODO
 
-[flutter](https://github.com/brianegan/flutter_architecture_samples/tree/master/example/built_redux)
+See [flutter_architecture_samples](https://github.com/brianegan/flutter_architecture_samples/tree/master/example/built_redux) for a flutter Todos example app.
