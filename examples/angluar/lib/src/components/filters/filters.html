@@ -1,0 +1,18 @@
+<span class="todo-count" *ngIf='numIncomplete != 1'>
+    <strong>{{numIncomplete}}</strong> items left</span>
+<span class="todo-count" *ngIf='numIncomplete == 1'>
+    <strong>{{numIncomplete}}</strong> item left</span>
+
+<ul class="filters">
+    <li>
+        <a (click)='setAll()' [ngClass]='{ "selected": isAll }'>All</a>
+    </li>
+    <li>
+        <a (click)='setActive()' [ngClass]='{ "selected": isActive }'>Active</a>
+    </li>
+    <li>
+        <a (click)='setCompleted()' [ngClass]='{ "selected": isCompleted }'>Completed</a>
+    </li>
+</ul>
+
+<button class="clear-completed" (click)='clearCompleted()'>Clear completed</button>

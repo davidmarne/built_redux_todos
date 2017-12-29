@@ -1,0 +1,7 @@
+<input class='toggle-all' type='checkbox'>
+<label (click)='toggleAll()' for="toggle-all">Mark all as complete</label>
+
+<ul class='todo-list'>
+    <todo-item *ngFor="let visibleTodo of visibleTodos" [todo]='visibleTodo' [actions]='actions'>
+    </todo-item>
+</ul>

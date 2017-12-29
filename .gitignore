@@ -1,0 +1,8 @@
+.pub
+packages
+.packages
+.dart_tool
+pubspec.lock
+
+# IntelliJ IDEA
+.idea/

@@ -1,0 +1,18 @@
+<section class='todoapp'>
+    <add-todo [actions]='store.actions' [pendingTodo]='store.state.pendingTodo'></add-todo>
+    <section class='main' *ngIf='store.state.hasTodos'>
+        <todos [actions]='store.actions' [visibleTodos]='store.state.visibleTodos'></todos>
+    </section>
+    <footer class='footer' *ngIf='store.state.hasTodos'>
+        <filter [actions]='store.actions' [filter]='store.state.filter' [numIncomplete]='store.state.numIncomplete'></filter>
+    </footer>
+</section>
+<footer class="info">
+    <p>Double-click to edit a todo</p>
+    <p>Created by
+        <a href="http://github.com/davidmarne">davidmarne</a>
+    </p>
+    <p>Part of
+        <a href="http://todomvc.com">TodoMVC</a>
+    </p>
+</footer>

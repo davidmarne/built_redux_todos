@@ -1,0 +1,7 @@
+<li [ngClass]='{ "completed": isCompleted }'>
+    <div class='view'>
+        <input class='toggle' type='checkbox' (click)='toggleCompleted()' [checked]='todo.completed'>
+        <label>{{todo.text}}</label>
+        <button class='destroy' (click)='remove()'></button>
+    </div>
+</li>

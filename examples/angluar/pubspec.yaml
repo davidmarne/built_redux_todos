@@ -1,0 +1,14 @@
+name: angular_example
+environment:
+  sdk: '>=1.23.0 <2.0.0'
+dependencies:
+  angular: ^4.0.0
+  browser: ^0.10.0
+  built_redux: ^7.0.0
+  built_redux_todos:
+    path: ../../
+
+transformers:
+- angular:
+    entry_points:
+    - web/main.dart

@@ -1,0 +1,23 @@
+name: vanilla_example
+version: 0.0.0
+authors:
+- David Marne <davemarne@gmail.com>
+homepage: https://github.com/davidmarne/built_redux_todos/examples/wui_builder
+dependencies:
+  built_redux: ^7.0.0
+  built_redux_todos:
+    path: ../../
+  built_collection: "^2.0.0"
+  built_value: "^4.0.0"
+  # built_redux_dev_tools:
+    # path: ../../../built_redux_dev_tools
+
+transformers:
+  - $dart2js
+
+environment:
+  sdk: ">=1.23.0 <2.0.0"
+
+web:
+  compiler:
+    debug: dartdevc
